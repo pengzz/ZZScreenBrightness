@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C25FD5421E738A900A270E9 /* ZZScreenBrightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C25FD5321E738A900A270E9 /* ZZScreenBrightness.m */; };
+		1C25FD5C21E739E000A270E9 /* JCBrightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C25FD5621E739E000A270E9 /* JCBrightness.m */; };
+		1C25FD5D21E739E000A270E9 /* QRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C25FD5721E739E000A270E9 /* QRCodeVC.m */; };
+		1C25FD5E21E739E000A270E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C25FD5821E739E000A270E9 /* ViewController.m */; };
 		3B5E6EDCC9A2891C89066890 /* Pods_ZZScreenBrightness_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F71797031962F4F904C0E6C /* Pods_ZZScreenBrightness_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -38,6 +42,14 @@
 
 /* Begin PBXFileReference section */
 		06A2A94C94B9B9E7D131C2CA /* Pods-ZZScreenBrightness_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZScreenBrightness_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZZScreenBrightness_Tests/Pods-ZZScreenBrightness_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1C25FD5221E738A900A270E9 /* ZZScreenBrightness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZScreenBrightness.h; sourceTree = "<group>"; };
+		1C25FD5321E738A900A270E9 /* ZZScreenBrightness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZScreenBrightness.m; sourceTree = "<group>"; };
+		1C25FD5621E739E000A270E9 /* JCBrightness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCBrightness.m; sourceTree = "<group>"; };
+		1C25FD5721E739E000A270E9 /* QRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeVC.m; sourceTree = "<group>"; };
+		1C25FD5821E739E000A270E9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1C25FD5921E739E000A270E9 /* JCBrightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBrightness.h; sourceTree = "<group>"; };
+		1C25FD5A21E739E000A270E9 /* QRCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeVC.h; sourceTree = "<group>"; };
+		1C25FD5B21E739E000A270E9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2A3C3C648DF229E45F99CDDD /* Pods-ZZScreenBrightness_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZScreenBrightness_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZZScreenBrightness_Example/Pods-ZZScreenBrightness_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZZScreenBrightness_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZScreenBrightness_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,12 +72,12 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6F71797031962F4F904C0E6C /* Pods_ZZScreenBrightness_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZScreenBrightness_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7F64FAB6419C849A38A6BA67 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7F64FAB6419C849A38A6BA67 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8646FBA02A45C8D707B61800 /* Pods-ZZScreenBrightness_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZScreenBrightness_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZScreenBrightness_Tests/Pods-ZZScreenBrightness_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5AA09E59CF2D06591FF1A7B /* Pods_ZZScreenBrightness_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZScreenBrightness_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB856AB62930A072FBC3AE05 /* ZZScreenBrightness.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZZScreenBrightness.podspec; path = ../ZZScreenBrightness.podspec; sourceTree = "<group>"; };
-		DF22EE05A23E146B6B36D498 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DB856AB62930A072FBC3AE05 /* ZZScreenBrightness.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZZScreenBrightness.podspec; path = ../ZZScreenBrightness.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DF22EE05A23E146B6B36D498 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E12021BABE79D967E8C1B87F /* Pods-ZZScreenBrightness_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZScreenBrightness_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZZScreenBrightness_Example/Pods-ZZScreenBrightness_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +107,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C25FD5121E7385E00A270E9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1C25FD5221E738A900A270E9 /* ZZScreenBrightness.h */,
+				1C25FD5321E738A900A270E9 /* ZZScreenBrightness.m */,
+				1C25FD5521E739E000A270E9 /* 22参考 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1C25FD5521E739E000A270E9 /* 22参考 */ = {
+			isa = PBXGroup;
+			children = (
+				1C25FD5B21E739E000A270E9 /* ViewController.h */,
+				1C25FD5821E739E000A270E9 /* ViewController.m */,
+				1C25FD5A21E739E000A270E9 /* QRCodeVC.h */,
+				1C25FD5721E739E000A270E9 /* QRCodeVC.m */,
+				1C25FD5921E739E000A270E9 /* JCBrightness.h */,
+				1C25FD5621E739E000A270E9 /* JCBrightness.m */,
+			);
+			path = "22参考";
+			sourceTree = "<group>";
+		};
 		326016D1D3AD3431B81E006C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +183,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ZZViewController.h */,
 				6003F5A6195388D20070C39A /* ZZViewController.m */,
+				1C25FD5121E7385E00A270E9 /* Classes */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -247,6 +283,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = pengzz;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = KSNH7JZDEX;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -355,8 +394,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C25FD5E21E739E000A270E9 /* ViewController.m in Sources */,
+				1C25FD5C21E739E000A270E9 /* JCBrightness.m in Sources */,
+				1C25FD5421E738A900A270E9 /* ZZScreenBrightness.m in Sources */,
 				6003F59E195388D20070C39A /* ZZAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZZViewController.m in Sources */,
+				1C25FD5D21E739E000A270E9 /* QRCodeVC.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,11 +528,12 @@
 			baseConfigurationReference = E12021BABE79D967E8C1B87F /* Pods-ZZScreenBrightness_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KSNH7JZDEX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZZScreenBrightness/ZZScreenBrightness-Prefix.pch";
 				INFOPLIST_FILE = "ZZScreenBrightness/ZZScreenBrightness-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pzz.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -500,11 +544,12 @@
 			baseConfigurationReference = 2A3C3C648DF229E45F99CDDD /* Pods-ZZScreenBrightness_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KSNH7JZDEX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZZScreenBrightness/ZZScreenBrightness-Prefix.pch";
 				INFOPLIST_FILE = "ZZScreenBrightness/ZZScreenBrightness-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pzz.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

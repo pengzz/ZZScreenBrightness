@@ -1,25 +1,22 @@
 //
-//  ZZViewController.m
-//  ZZScreenBrightness
+//  ViewController.m
+//  brightnessGradientDemo
 //
-//  Created by pengzz on 01/10/2019.
-//  Copyright (c) 2019 pengzz. All rights reserved.
+//  Created by 张小兵 on 2018/3/3.
+//  Copyright © 2018年 leon. All rights reserved.
 //
 
-#import "ZZViewController.h"
+#import "ViewController.h"
 #import "QRCodeVC.h"
 
-@interface ZZViewController ()
+@interface ViewController ()
 
 @end
 
-@implementation ZZViewController
+@implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
     self.view.backgroundColor = [UIColor whiteColor];
     [self addBtn];
 }
@@ -42,10 +39,10 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

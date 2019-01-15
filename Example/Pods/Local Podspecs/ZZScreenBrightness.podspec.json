@@ -1,0 +1,22 @@
+{
+  "name": "ZZScreenBrightness",
+  "version": "0.1.0",
+  "summary": "A short description of ZZScreenBrightness.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/pengzz/ZZScreenBrightness",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "pengzz": "pzz1284@163.com"
+  },
+  "source": {
+    "git": "https://github.com/pengzz/ZZScreenBrightness.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ZZScreenBrightness/Classes/**/*"
+}

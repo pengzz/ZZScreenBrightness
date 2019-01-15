@@ -1,0 +1,6 @@
+framework module ZZScreenBrightness {
+  umbrella header "ZZScreenBrightness-umbrella.h"
+
+  export *
+  module * { export * }
+}

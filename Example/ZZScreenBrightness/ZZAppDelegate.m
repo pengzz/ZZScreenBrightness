@@ -43,4 +43,37 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+- (void)applicationDidEnterBackground0:(UIApplication *)application
+{
+    NSLog(@"DidEnterBackground");
+    
+    self.timeCount = 0;
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeRun) userInfo:nil repeats:true];
+    
+    UIApplication* app = [UIApplication sharedApplication];
+    
+    UIBackgroundTaskIdentifier  bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
+        [app endBackgroundTask:bgTask];
+    }];
+}
+
+- (void)timeRun{
+    self.timeCount ++;
+    NSLog(@"timeCount = %d",self.timeCount);
+    if (self.timeCount >= 30) {
+        NSLog(@"时间到");
+        if (self.timer) {
+            self.timeCount = 0;
+            [self.timer invalidate];
+            self.timer = nil;
+        }
+    }
+}
+//---------------------
+//作者：淡暗云之遥
+//来源：CSDN
+//原文：https://blog.csdn.net/squallmouse/article/details/51445477
+//版权声明：本文为博主原创文章，转载请附上博文链接！
+
 @end

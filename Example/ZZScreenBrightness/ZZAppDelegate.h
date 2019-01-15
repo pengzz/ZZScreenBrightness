@@ -12,4 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (nonatomic, assign)NSInteger timeCount;
+@property (nonatomic, strong) NSTimer *timer;
+
 @end

@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A7C51443261AA2B5E0EA52E96AEE66 /* ZZScreenBrightness-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE2674449FA4AB842B7DC66FF084E5E5 /* ZZScreenBrightness-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37FC69B69C4829392BAF253FBC166858 /* Pods-ZZScreenBrightness_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BE1263A33ECFB62CB306A2113D2F03 /* Pods-ZZScreenBrightness_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59F4F753A9276174080E8EB59B25F4FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		677D7CB843D1BC52741C81FF2752DF42 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 68335116D37A1F5BFE05AF8F8A18FBA5 /* ReplaceMe.m */; };
+		67A0BBBD6F6C8F264F7CB9C6B9460E78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D4993E122E85B0DCA6E5EBF388477EB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E01F8733E3713DB45B739E31DF1BC73E /* Pods-ZZScreenBrightness_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 177AE3A4465A4D8044C9D06CB009403F /* Pods-ZZScreenBrightness_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC989938C3FF329621774F6D1236E0BA /* ZZScreenBrightness-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3675B5DBA8642E0F8E03704CA4C630 /* ZZScreenBrightness-dummy.m */; };
+		F119B397AE808B11C941617820763B27 /* Pods-ZZScreenBrightness_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D0F7EAD989E7FEDA5975510D77347E /* Pods-ZZScreenBrightness_Tests-dummy.m */; };
+		F54A4A6A56D375B8DBD2271CD5FD87FE /* Pods-ZZScreenBrightness_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D53F9C9CDE4E439CCD3803BCAE7091F /* Pods-ZZScreenBrightness_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C758EE22DB446497CCB6B92AD0712C5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61D67D0E6613F5C5620577B60975B794;
+			remoteInfo = "Pods-ZZScreenBrightness_Example";
+		};
+		DAC98E548CE592671855D860B7383FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73622E6FA14226E15464CB752D69917E;
+			remoteInfo = ZZScreenBrightness;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		141A6319BEEDC2945724AB63C1AE7072 /* Pods-ZZScreenBrightness_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZZScreenBrightness_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		177AE3A4465A4D8044C9D06CB009403F /* Pods-ZZScreenBrightness_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZZScreenBrightness_Example-umbrella.h"; sourceTree = "<group>"; };
+		22BE1263A33ECFB62CB306A2113D2F03 /* Pods-ZZScreenBrightness_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZZScreenBrightness_Tests-umbrella.h"; sourceTree = "<group>"; };
+		24189213E058445ACBA0503F2980E124 /* ZZScreenBrightness-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZZScreenBrightness-prefix.pch"; sourceTree = "<group>"; };
+		24F3FC5EC565EB0D2291D4C0E5B9F99E /* Pods_ZZScreenBrightness_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZZScreenBrightness_Example.framework; path = "Pods-ZZScreenBrightness_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27213AD3242D5B3635696F0F8C50436E /* Pods-ZZScreenBrightness_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZZScreenBrightness_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		30B5FFB8EDEAFDB140C13B1E4AE30F6C /* ZZScreenBrightness.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZZScreenBrightness.xcconfig; sourceTree = "<group>"; };
+		35E3392169F5580E65E2E3AEA3B79683 /* Pods-ZZScreenBrightness_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZZScreenBrightness_Example-resources.sh"; sourceTree = "<group>"; };
+		46334C1C5F19C9E8C5A865E2DD75B298 /* Pods-ZZScreenBrightness_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZZScreenBrightness_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		473677031B27A5C407BBAE22C8997076 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		4BA759BC1A590A6E7ADAA84E5E4C10D4 /* Pods-ZZScreenBrightness_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZZScreenBrightness_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68335116D37A1F5BFE05AF8F8A18FBA5 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = ZZScreenBrightness/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		6D53F9C9CDE4E439CCD3803BCAE7091F /* Pods-ZZScreenBrightness_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZZScreenBrightness_Example-dummy.m"; sourceTree = "<group>"; };
+		6EE4F8DC97F5D2860691F0359354F335 /* Pods-ZZScreenBrightness_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZZScreenBrightness_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		75FCD02879433BD7DD477E8BDBE96E34 /* Pods-ZZScreenBrightness_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZZScreenBrightness_Tests.modulemap"; sourceTree = "<group>"; };
+		76208A28A744554AE4DF7C9B8EB56428 /* Pods-ZZScreenBrightness_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZZScreenBrightness_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		7B3675B5DBA8642E0F8E03704CA4C630 /* ZZScreenBrightness-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZZScreenBrightness-dummy.m"; sourceTree = "<group>"; };
+		7C9DA226039F673EF53DD852B1580DAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		892ED02F05C3FF84121D8D34293FF05B /* Pods_ZZScreenBrightness_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZZScreenBrightness_Tests.framework; path = "Pods-ZZScreenBrightness_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9434CB677D65BA1BDAB4390B1EE552E6 /* Pods-ZZScreenBrightness_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZZScreenBrightness_Example-frameworks.sh"; sourceTree = "<group>"; };
+		99D0F7EAD989E7FEDA5975510D77347E /* Pods-ZZScreenBrightness_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZZScreenBrightness_Tests-dummy.m"; sourceTree = "<group>"; };
+		AB22027B28D8423277F05972E74F97C0 /* Pods-ZZScreenBrightness_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZZScreenBrightness_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B9F75ED82AEE665B7AE0095BE2D63D23 /* Pods-ZZScreenBrightness_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZZScreenBrightness_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BB985BBFF5BD6C7C9C822E98835129BD /* ZZScreenBrightness.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZZScreenBrightness.modulemap; sourceTree = "<group>"; };
+		C1D8CFF8C88CE520C9C3B75A7B573DB3 /* Pods-ZZScreenBrightness_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZZScreenBrightness_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C38A8CC039531AA8F198A95E70ACE46B /* Pods-ZZScreenBrightness_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZZScreenBrightness_Tests-resources.sh"; sourceTree = "<group>"; };
+		CC3F48C1E7DBFB99F45E372539138DCF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF281AA0AA2430C955B95EEA71E72C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B4A3CBAB6102A93B5678D3247EF5E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1B052BD292732E8AAA7DD88F109DED1 /* ZZScreenBrightness.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ZZScreenBrightness.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DD3A4C0CD90815FEFBB8C175527C2BA3 /* ZZScreenBrightness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZZScreenBrightness.framework; path = ZZScreenBrightness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2674449FA4AB842B7DC66FF084E5E5 /* ZZScreenBrightness-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZZScreenBrightness-umbrella.h"; sourceTree = "<group>"; };
+		FE71D378E3F6C6E7E449F2D41BBAD5E2 /* Pods-ZZScreenBrightness_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZZScreenBrightness_Example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D51995D5B5735D69F99D175EE805977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A0BBBD6F6C8F264F7CB9C6B9460E78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB77DC6B1D50BB864524B035425CA274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F4F753A9276174080E8EB59B25F4FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE66DD99DCAA836B84E2A98C766802A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4993E122E85B0DCA6E5EBF388477EB0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1411234D370E85F76E9B165C7FC79A9C /* ZZScreenBrightness */ = {
+			isa = PBXGroup;
+			children = (
+				68335116D37A1F5BFE05AF8F8A18FBA5 /* ReplaceMe.m */,
+				745FE94B205238C8384D628F5A345A54 /* Pod */,
+				A3C5F09C67F8CE94561E8E0BFEAC7A37 /* Support Files */,
+			);
+			name = ZZScreenBrightness;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2E5137961B4747BE5A0F6DA14536F86D /* Pods-ZZScreenBrightness_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D0B4A3CBAB6102A93B5678D3247EF5E0 /* Info.plist */,
+				FE71D378E3F6C6E7E449F2D41BBAD5E2 /* Pods-ZZScreenBrightness_Example.modulemap */,
+				141A6319BEEDC2945724AB63C1AE7072 /* Pods-ZZScreenBrightness_Example-acknowledgements.markdown */,
+				46334C1C5F19C9E8C5A865E2DD75B298 /* Pods-ZZScreenBrightness_Example-acknowledgements.plist */,
+				6D53F9C9CDE4E439CCD3803BCAE7091F /* Pods-ZZScreenBrightness_Example-dummy.m */,
+				9434CB677D65BA1BDAB4390B1EE552E6 /* Pods-ZZScreenBrightness_Example-frameworks.sh */,
+				35E3392169F5580E65E2E3AEA3B79683 /* Pods-ZZScreenBrightness_Example-resources.sh */,
+				177AE3A4465A4D8044C9D06CB009403F /* Pods-ZZScreenBrightness_Example-umbrella.h */,
+				AB22027B28D8423277F05972E74F97C0 /* Pods-ZZScreenBrightness_Example.debug.xcconfig */,
+				B9F75ED82AEE665B7AE0095BE2D63D23 /* Pods-ZZScreenBrightness_Example.release.xcconfig */,
+			);
+			name = "Pods-ZZScreenBrightness_Example";
+			path = "Target Support Files/Pods-ZZScreenBrightness_Example";
+			sourceTree = "<group>";
+		};
+		40460899551D4664235A53980D0AADA7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E5137961B4747BE5A0F6DA14536F86D /* Pods-ZZScreenBrightness_Example */,
+				899426CE4DD6AB8D7D7E1CEC26CFE562 /* Pods-ZZScreenBrightness_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		735E0EF1A2A84F60EBB82A54EDDD371D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24F3FC5EC565EB0D2291D4C0E5B9F99E /* Pods_ZZScreenBrightness_Example.framework */,
+				892ED02F05C3FF84121D8D34293FF05B /* Pods_ZZScreenBrightness_Tests.framework */,
+				DD3A4C0CD90815FEFBB8C175527C2BA3 /* ZZScreenBrightness.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		745FE94B205238C8384D628F5A345A54 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				473677031B27A5C407BBAE22C8997076 /* LICENSE */,
+				7C9DA226039F673EF53DD852B1580DAE /* README.md */,
+				D1B052BD292732E8AAA7DD88F109DED1 /* ZZScreenBrightness.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				CC90B69FD932D8C6A7E98590199A849A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				735E0EF1A2A84F60EBB82A54EDDD371D /* Products */,
+				40460899551D4664235A53980D0AADA7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		899426CE4DD6AB8D7D7E1CEC26CFE562 /* Pods-ZZScreenBrightness_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CEF281AA0AA2430C955B95EEA71E72C1 /* Info.plist */,
+				75FCD02879433BD7DD477E8BDBE96E34 /* Pods-ZZScreenBrightness_Tests.modulemap */,
+				27213AD3242D5B3635696F0F8C50436E /* Pods-ZZScreenBrightness_Tests-acknowledgements.markdown */,
+				4BA759BC1A590A6E7ADAA84E5E4C10D4 /* Pods-ZZScreenBrightness_Tests-acknowledgements.plist */,
+				99D0F7EAD989E7FEDA5975510D77347E /* Pods-ZZScreenBrightness_Tests-dummy.m */,
+				76208A28A744554AE4DF7C9B8EB56428 /* Pods-ZZScreenBrightness_Tests-frameworks.sh */,
+				C38A8CC039531AA8F198A95E70ACE46B /* Pods-ZZScreenBrightness_Tests-resources.sh */,
+				22BE1263A33ECFB62CB306A2113D2F03 /* Pods-ZZScreenBrightness_Tests-umbrella.h */,
+				6EE4F8DC97F5D2860691F0359354F335 /* Pods-ZZScreenBrightness_Tests.debug.xcconfig */,
+				C1D8CFF8C88CE520C9C3B75A7B573DB3 /* Pods-ZZScreenBrightness_Tests.release.xcconfig */,
+			);
+			name = "Pods-ZZScreenBrightness_Tests";
+			path = "Target Support Files/Pods-ZZScreenBrightness_Tests";
+			sourceTree = "<group>";
+		};
+		A3C5F09C67F8CE94561E8E0BFEAC7A37 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC3F48C1E7DBFB99F45E372539138DCF /* Info.plist */,
+				BB985BBFF5BD6C7C9C822E98835129BD /* ZZScreenBrightness.modulemap */,
+				30B5FFB8EDEAFDB140C13B1E4AE30F6C /* ZZScreenBrightness.xcconfig */,
+				7B3675B5DBA8642E0F8E03704CA4C630 /* ZZScreenBrightness-dummy.m */,
+				24189213E058445ACBA0503F2980E124 /* ZZScreenBrightness-prefix.pch */,
+				EE2674449FA4AB842B7DC66FF084E5E5 /* ZZScreenBrightness-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZZScreenBrightness";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC90B69FD932D8C6A7E98590199A849A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1411234D370E85F76E9B165C7FC79A9C /* ZZScreenBrightness */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5F01293347575C6EC5F93A050250E1C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01F8733E3713DB45B739E31DF1BC73E /* Pods-ZZScreenBrightness_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71EF7B2C9470D3BC233C40A2193A1E10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37FC69B69C4829392BAF253FBC166858 /* Pods-ZZScreenBrightness_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3A9B87851A67A1DF3B9CD7E27133DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A7C51443261AA2B5E0EA52E96AEE66 /* ZZScreenBrightness-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27E013DE1D3EA3E63293D99EDFA49462 /* Pods-ZZScreenBrightness_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7600B95939D29D0CC5BB4671CFCAE67 /* Build configuration list for PBXNativeTarget "Pods-ZZScreenBrightness_Tests" */;
+			buildPhases = (
+				A5023C6B1F1F89CFA1A3B3EB78C56D20 /* Sources */,
+				BE66DD99DCAA836B84E2A98C766802A1 /* Frameworks */,
+				71EF7B2C9470D3BC233C40A2193A1E10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C891693D8045D975F65FB52FF198700 /* PBXTargetDependency */,
+			);
+			name = "Pods-ZZScreenBrightness_Tests";
+			productName = "Pods-ZZScreenBrightness_Tests";
+			productReference = 892ED02F05C3FF84121D8D34293FF05B /* Pods_ZZScreenBrightness_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		61D67D0E6613F5C5620577B60975B794 /* Pods-ZZScreenBrightness_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38AC276126DA6BEB42AE89F56B1BE35 /* Build configuration list for PBXNativeTarget "Pods-ZZScreenBrightness_Example" */;
+			buildPhases = (
+				7FED6FE87765A4A3ED210C51C0CB9B2E /* Sources */,
+				BB77DC6B1D50BB864524B035425CA274 /* Frameworks */,
+				5F01293347575C6EC5F93A050250E1C2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DD7AD47C510F79900EF6E5A8ADE343C /* PBXTargetDependency */,
+			);
+			name = "Pods-ZZScreenBrightness_Example";
+			productName = "Pods-ZZScreenBrightness_Example";
+			productReference = 24F3FC5EC565EB0D2291D4C0E5B9F99E /* Pods_ZZScreenBrightness_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73622E6FA14226E15464CB752D69917E /* ZZScreenBrightness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2260371F5F1561C1211A51A49F3D6275 /* Build configuration list for PBXNativeTarget "ZZScreenBrightness" */;
+			buildPhases = (
+				42E636136D1B7A2CB7426EE316E30B9E /* Sources */,
+				3D51995D5B5735D69F99D175EE805977 /* Frameworks */,
+				ED3A9B87851A67A1DF3B9CD7E27133DE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZZScreenBrightness;
+			productName = ZZScreenBrightness;
+			productReference = DD3A4C0CD90815FEFBB8C175527C2BA3 /* ZZScreenBrightness.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 735E0EF1A2A84F60EBB82A54EDDD371D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61D67D0E6613F5C5620577B60975B794 /* Pods-ZZScreenBrightness_Example */,
+				27E013DE1D3EA3E63293D99EDFA49462 /* Pods-ZZScreenBrightness_Tests */,
+				73622E6FA14226E15464CB752D69917E /* ZZScreenBrightness */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42E636136D1B7A2CB7426EE316E30B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677D7CB843D1BC52741C81FF2752DF42 /* ReplaceMe.m in Sources */,
+				EC989938C3FF329621774F6D1236E0BA /* ZZScreenBrightness-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FED6FE87765A4A3ED210C51C0CB9B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54A4A6A56D375B8DBD2271CD5FD87FE /* Pods-ZZScreenBrightness_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5023C6B1F1F89CFA1A3B3EB78C56D20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F119B397AE808B11C941617820763B27 /* Pods-ZZScreenBrightness_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DD7AD47C510F79900EF6E5A8ADE343C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZZScreenBrightness;
+			target = 73622E6FA14226E15464CB752D69917E /* ZZScreenBrightness */;
+			targetProxy = DAC98E548CE592671855D860B7383FD5 /* PBXContainerItemProxy */;
+		};
+		6C891693D8045D975F65FB52FF198700 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ZZScreenBrightness_Example";
+			target = 61D67D0E6613F5C5620577B60975B794 /* Pods-ZZScreenBrightness_Example */;
+			targetProxy = C758EE22DB446497CCB6B92AD0712C5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		181563A6F1205334723D73D8000AD444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE4F8DC97F5D2860691F0359354F335 /* Pods-ZZScreenBrightness_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZZScreenBrightness_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZZScreenBrightness_Tests/Pods-ZZScreenBrightness_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		24D635AFADC12F4952D676C7141C1083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B5FFB8EDEAFDB140C13B1E4AE30F6C /* ZZScreenBrightness.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZZScreenBrightness/ZZScreenBrightness-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZZScreenBrightness/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZZScreenBrightness/ZZScreenBrightness.modulemap";
+				PRODUCT_MODULE_NAME = ZZScreenBrightness;
+				PRODUCT_NAME = ZZScreenBrightness;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		285B7CD4653A6E5D4900EAC96650DF08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB22027B28D8423277F05972E74F97C0 /* Pods-ZZScreenBrightness_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZZScreenBrightness_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZZScreenBrightness_Example/Pods-ZZScreenBrightness_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		777C31E10AF83408FBDA5C7B7102C7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D8CFF8C88CE520C9C3B75A7B573DB3 /* Pods-ZZScreenBrightness_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZZScreenBrightness_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZZScreenBrightness_Tests/Pods-ZZScreenBrightness_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B38955794B710E719D9E33C55BD67A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F75ED82AEE665B7AE0095BE2D63D23 /* Pods-ZZScreenBrightness_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZZScreenBrightness_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZZScreenBrightness_Example/Pods-ZZScreenBrightness_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B881E7943B0374371C1E188A1873453E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B5FFB8EDEAFDB140C13B1E4AE30F6C /* ZZScreenBrightness.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZZScreenBrightness/ZZScreenBrightness-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZZScreenBrightness/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZZScreenBrightness/ZZScreenBrightness.modulemap";
+				PRODUCT_MODULE_NAME = ZZScreenBrightness;
+				PRODUCT_NAME = ZZScreenBrightness;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2260371F5F1561C1211A51A49F3D6275 /* Build configuration list for PBXNativeTarget "ZZScreenBrightness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B881E7943B0374371C1E188A1873453E /* Debug */,
+				24D635AFADC12F4952D676C7141C1083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B38AC276126DA6BEB42AE89F56B1BE35 /* Build configuration list for PBXNativeTarget "Pods-ZZScreenBrightness_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285B7CD4653A6E5D4900EAC96650DF08 /* Debug */,
+				B38955794B710E719D9E33C55BD67A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7600B95939D29D0CC5BB4671CFCAE67 /* Build configuration list for PBXNativeTarget "Pods-ZZScreenBrightness_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181563A6F1205334723D73D8000AD444 /* Debug */,
+				777C31E10AF83408FBDA5C7B7102C7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

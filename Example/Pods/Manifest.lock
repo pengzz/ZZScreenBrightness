@@ -1,0 +1,16 @@
+PODS:
+  - ZZScreenBrightness (0.1.0)
+
+DEPENDENCIES:
+  - ZZScreenBrightness (from `../`)
+
+EXTERNAL SOURCES:
+  ZZScreenBrightness:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZZScreenBrightness: d15c62c9a9c3925a011e615983b609ddc2a3108f
+
+PODFILE CHECKSUM: a929f000402e8440b1e478856a5cf8c22e1dab3a
+
+COCOAPODS: 1.5.0
