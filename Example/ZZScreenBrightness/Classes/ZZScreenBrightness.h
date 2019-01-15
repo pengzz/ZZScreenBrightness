@@ -38,6 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface ZZScreenBrightness : NSObject
 
+#pragma mark - 公开方法
 /**
  保存当前的亮度
  */
@@ -55,8 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)graduallyResumeBrightness;
 
 
-
-#pragma mark 细节调整
+#pragma mark - 设值调整
 
 /**
  单步调节亮度增减差值。（默认0.005*2，值越大亮度动画越快）
@@ -76,6 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
  ##说明：若高亮状态退后台时没有正常动画到普亮，此时再回前台后页面跳转普亮时，则亮度值为从前台记录过来的亮度值；如果退后台能正常动画到普亮值，则反而是较好的设置，因为后台时可能重新调节了亮度值等！
  */
 + (void)setIsFollowForegroundBrightness:(BOOL)flag;
+
 
 @end
 

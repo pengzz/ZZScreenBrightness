@@ -16,18 +16,19 @@
 #define debugMethod()
 #endif
 
-
-static CGFloat _brightness           = 0.8;           //高亮状态时亮度值（高亮值）
+//设值调整
 static CGFloat _stepInterval         = (0.005*2*1.0); //单步调节亮度增减差值(覆盖全2.66值)
 static CGFloat _timeInterval         = (1/180.0);     //单步调节时间间隔
 static BOOL    _isFollowForegroundBrightness = YES;   //是否跟随前台(获取到的)亮度值
-
+//一些属性
+static CGFloat _brightness           = 0.8;           //高亮状态时亮度值（高亮值）
 static CGFloat _currentBrightness; //记录当前亮度值（普亮值）
 static NSOperationQueue *_queue;   //操作队列
 static BOOL    _isHigh;            //是否高亮状态
 
 @implementation ZZScreenBrightness
 
+#pragma mark - 设值调整
 /**
  单步调节亮度增减差值。（默认0.005*2，值越大亮度动画越快）
  */
@@ -48,6 +49,7 @@ static BOOL    _isHigh;            //是否高亮状态
 + (void)setIsFollowForegroundBrightness:(BOOL)flag {_isFollowForegroundBrightness = flag;}
 
 
+#pragma mark - 初始
 + (void)initialize{
     //记录一次亮度值
     [self saveDefaultBrightness];
@@ -59,7 +61,7 @@ static BOOL    _isHigh;            //是否高亮状态
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noti_saveDefaultBrightness) name:UIScreenBrightnessDidChangeNotification object:nil];
 }
 
-#pragma mark - 系统通知：应用激活状态
+#pragma mark - 系统通知
 + (void)addNSNotification {
     //程序变成激活状态
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
@@ -80,6 +82,7 @@ static BOOL    _isHigh;            //是否高亮状态
         }
     }
 }
+
 + (void)didBecomeActive {
     if (_isHigh) {//上一次为高亮状态时
         if (_isFollowForegroundBrightness) {
@@ -94,6 +97,7 @@ static BOOL    _isHigh;            //是否高亮状态
         [self _graduallySetBrightness:_brightness];//还原到激活前的
     }
 }
+
 //失去激活状态，快速恢复之前的亮度
 + (void)willResignActive {
     if (_isHigh) {
@@ -181,179 +185,5 @@ static BOOL    _isHigh;            //是否高亮状态
         [UIScreen mainScreen].brightness = _currentBrightness;
     }];
 }
-
-
-
-
-
-
-/*
-#pragma mark - timer测试
-//尝试一下==================================
-//timer
-static CGFloat _value;
-static CGFloat _isIncrease;//+1增；-1减
-
-//timer_old
-static CGFloat t_brightness;
-static CGFloat _step;
-static int _times;
-static int _time;
-static NSTimer *_timer = nil;
-//尝试一下==================================
-+ (void)_graduallySetBrightness0_timer_old:(CGFloat)value {
-    if (_timer) {
-        [_timer invalidate];
-        _timer = nil;
-    }
-    
-    CGFloat brightness = [UIScreen mainScreen].brightness;
-    CGFloat stepInterval = _stepInterval;
-    CGFloat step = stepInterval * ((value > brightness) ? 1 : -1);
-    int times = fabs((value - brightness) / stepInterval);
-    CGFloat timeInterval = _timeInterval;
-    //根据亮度差计算出时间和每个单位时间调节的亮度值
-    {
-        t_brightness = brightness;
-        _step = step;
-        _times = times;
-        _time = 0;
-    }
-    _timer = [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(timeRun_old) userInfo:nil repeats:true];
-}
-+ (void)timeRun_old{
-    if (_time <= _times+0) {
-        [UIScreen mainScreen].brightness = t_brightness + _time * _step;
-        _time ++;
-    }
-    else {
-        NSLog(@"时间到22222");
-        if (_timer) {
-            [_timer invalidate];
-            _timer = nil;
-        }
-    }
-    NSLog(@"_times==%@; _time==%@",@(_times),@(_time));
-}
-
-+ (void)_graduallySetBrightness0_timer:(CGFloat)value {
-    if (_timer) {
-        [_timer invalidate];
-        _timer = nil;
-    }
-    
-    CGFloat brightness = [UIScreen mainScreen].brightness;
-    //根据亮度差计算出时间和每个单位时间调节的亮度值
-    _value = value;
-    _isIncrease = (value > brightness) ? 1 : -1;
-    //
-    _timer = [NSTimer scheduledTimerWithTimeInterval:_stepInterval target:self selector:@selector(timeRun) userInfo:nil repeats:true];
-}
-+ (void)timeRun{
-    BOOL flag;
-    if (_isIncrease > 0) {
-        flag = [UIScreen mainScreen].brightness < _value;
-    } else {
-        flag = [UIScreen mainScreen].brightness > _value;
-    }
-    //
-    if (flag) {
-        [UIScreen mainScreen].brightness += _isIncrease * _stepInterval;
-    } else {
-        NSLog(@"时间到22222");
-        if (_timer) {
-            [_timer invalidate];
-            _timer = nil;
-        }
-    }
-}
-
-//下面这些测试没有cancel方法所以不用！
-+ (void)graduallySetBrightness0X:(CGFloat)value{
-    
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    //dispatch_cancel
-    
-    //    [_queue cancelAllOperations];
-    NSLog(@"将要变为的亮度%f",value);
-    
-    CGFloat brightness = [UIScreen mainScreen].brightness;
-    CGFloat step = 0.005 * ((value > brightness) ? 1 : -1);
-    int times = fabs((value - brightness) / 0.005);
-    
-    // 创建为1的信号量
-    
-    if (1-1) {
-        //dispatch_semaphore_t sem = dispatch_semaphore_create(1);
-        dispatch_async(queue, ^{
-            for (CGFloat i = 1; i < times + 1; i++) {
-                //dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
-                
-                [NSThread sleepForTimeInterval:1 / 180.0];
-                [UIScreen mainScreen].brightness = brightness + i * step;
-                NSLog(@"%@",[NSNumber numberWithInt:i]);
-                NSLog(@"任务所在 %@",[NSThread currentThread]);
-                
-                // 发送信号量
-                //dispatch_semaphore_signal(sem);
-            }
-        });
-    }
-    
-    //22
-    //用串行queue
-    if (0) {
-        //serialQueue
-        dispatch_queue_t queue = dispatch_queue_create("com.SerialQueue", NULL);
-        for (CGFloat i = 1; i < times + 1; i++) {
-            dispatch_async(queue, ^{
-                [NSThread sleepForTimeInterval:1 / 180.0];
-                [UIScreen mainScreen].brightness = brightness + i * step;
-                NSLog(@"%@",[NSNumber numberWithInt:i]);
-                NSLog(@"任务所在 %@",[NSThread currentThread]);
-            });
-        }
-    }
-    
-    //用GCD的信号量来实现异步线程同步操作
-    if (2) {
-        dispatch_semaphore_t sem = dispatch_semaphore_create(0);
-        //根据亮度差计算出时间和每个单位时间调节的亮度值
-        for (CGFloat i = 1; i < times + 1; i++) {
-            NSLog(@"zz000:1:%@",[NSThread currentThread]);
-            
-            if(1){
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1/180.0 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 0), ^{
-                    
-                    [UIScreen mainScreen].brightness = brightness + i * step;
-                    NSLog(@"%@",[NSNumber numberWithInt:i]);
-                    NSLog(@"任务所在 %@",[NSThread currentThread]);
-                    
-                    //发送信号量
-                    dispatch_semaphore_signal(sem);
-                });
-            }
-            if(0){
-                //注意队列
-                dispatch_async(dispatch_get_global_queue(0, 0), ^{
-                    [NSThread sleepForTimeInterval:1 / 180.0];
-                    [UIScreen mainScreen].brightness = brightness + i * step;
-                    NSLog(@"%@",[NSNumber numberWithInt:i]);
-                    NSLog(@"任务所在 %@",[NSThread currentThread]);
-                    
-                    //发送信号量
-                    dispatch_semaphore_signal(sem);
-                });
-            }
-            
-            NSLog(@"zz000:2:%@",[NSThread currentThread]);
-            //等待信号量
-            dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
-            NSLog(@"zz000:3:%@",[NSThread currentThread]);
-        }
-    }
-}
-*/
-
 
 @end
