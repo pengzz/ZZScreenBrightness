@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
  [ZZScreenBrightness graduallyResumeBrightness];
  }
  
+ ##其它：
+ //如果要保持屏幕常亮，请单独成对使用类似代码UIApplication.shared.isIdleTimerDisabled = true;
  */
 @interface ZZScreenBrightness : NSObject
 
@@ -67,7 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setTimeInterval:(CGFloat)timeInterval;
 
 /**
- 是否跟随前台(获取到的)亮度值：
+ 是否跟随前台(获取到的)亮度值：（默认YES）
  
  ##即：是否在高亮状态退后台回到前台的一瞬间重新获取设置普亮值，以便从高亮状态跳转普亮状态时使用此普亮值。
  
@@ -78,6 +80,3 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
-
-//// 保存屏幕常亮
-//UIApplication.shared.isIdleTimerDisabled = true

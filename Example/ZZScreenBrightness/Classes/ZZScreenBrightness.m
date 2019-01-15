@@ -39,7 +39,7 @@ static BOOL    _isHigh;            //是否高亮状态
 + (void)setTimeInterval:(CGFloat)timeInterval {_timeInterval = timeInterval;}
 
 /**
- 是否跟随前台(获取到的)亮度值：
+ 是否跟随前台(获取到的)亮度值：（默认YES）
  
  ##即：是否在高亮状态退后台回到前台的一瞬间重新获取设置普亮值，以便从高亮状态跳转普亮状态时使用此普亮值。
  
@@ -187,7 +187,7 @@ static BOOL    _isHigh;            //是否高亮状态
 
 
 
-
+/*
 #pragma mark - timer测试
 //尝试一下==================================
 //timer
@@ -269,7 +269,7 @@ static NSTimer *_timer = nil;
 }
 
 //下面这些测试没有cancel方法所以不用！
-+ (void)graduallySetBrightness0XX:(CGFloat)value{
++ (void)graduallySetBrightness0X:(CGFloat)value{
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     //dispatch_cancel
@@ -353,6 +353,7 @@ static NSTimer *_timer = nil;
         }
     }
 }
+*/
 
 
 @end
