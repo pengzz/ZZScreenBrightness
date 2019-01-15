@@ -140,7 +140,9 @@ static BOOL    _isHigh;            //是否高亮状态
     int times = fabs((value - brightness) / stepInterval);
     CGFloat timeInterval = _timeInterval;
     
+#ifndef __OPTIMIZE__
     NSDate *d = [NSDate new];
+#endif
     NSLog(@"date==%@",d);
 
     //根据亮度差计算出时间和每个单位时间调节的亮度值
