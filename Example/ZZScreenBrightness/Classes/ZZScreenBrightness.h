@@ -52,10 +52,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)graduallyResumeBrightness;
 
-/**
- 增加的方法，使亮度快速恢复到之前的值
- */
-+ (void)fastResumeBrightness;
+///**
+// 增加的方法，使亮度快速恢复到之前的值
+// */
+//+ (void)fastResumeBrightness;
 
 
 #pragma mark 细节调整
@@ -78,12 +78,6 @@ NS_ASSUME_NONNULL_BEGIN
  ##说明：若高亮状态退后台时没有正常动画到普亮，此时再回前台后页面跳转普亮时，则亮度值为从前台记录过来的亮度值；如果退后台能正常动画到普亮值，则反而是较好的设置，因为后台时可能重新调节了亮度值等！
  */
 + (void)setIsFollowForegroundBrightness:(BOOL)flag;
-
-
-///**
-// 是否处理系统手机亮度改变时发送的通知。（默认YES，默认处理）
-// */
-//+ (void)setBrightnessDidChange:(BOOL)flag {_brightnessDidChange = flag;}
 
 @end
 
