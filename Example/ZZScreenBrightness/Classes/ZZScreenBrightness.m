@@ -9,46 +9,22 @@
 #import "ZZScreenBrightness.h"
 
 #ifndef __OPTIMIZE__
-//这里执行的是debug模式下
 #define NSLog(...) NSLog(__VA_ARGS__)
 #define debugMethod() NSLog(@"%s", __func__)
 #else
-//这里执行的是release模式下
 #define NSLog(...)
 #define debugMethod()
 #endif
 
-//#ifdef DEBUG
-//#define NSLog(...) NSLog(__VA_ARGS__)
-//#define debugMethod() NSLog(@"%s", __func__)
-//#else
-//#define NSLog(...)
-//#define debugMethod()
-//#endif
-
 
 static CGFloat _brightness           = 0.8;           //高亮状态时亮度值（高亮值）
-static CGFloat _stepInterval         = (0.005*2*1.0); //单步调节亮度增减差值(全2.66值)
+static CGFloat _stepInterval         = (0.005*2*1.0); //单步调节亮度增减差值(覆盖全2.66值)
 static CGFloat _timeInterval         = (1/180.0);     //单步调节时间间隔
 static BOOL    _isFollowForegroundBrightness = YES;   //是否跟随前台(获取到的)亮度值
 
 static CGFloat _currentBrightness; //记录当前亮度值（普亮值）
 static NSOperationQueue *_queue;   //操作队列
-static BOOL    _isHigh;        //是否高亮状态
-
-
-//尝试一下==================================
-//timer
-static CGFloat _value;
-static CGFloat _isIncrease;//+1增；-1减
-
-//timer_old
-static CGFloat t_brightness;
-static CGFloat _step;
-static int _times;
-static int _time;
-static NSTimer *_timer = nil;
-//尝试一下==================================
+static BOOL    _isHigh;            //是否高亮状态
 
 @implementation ZZScreenBrightness
 
@@ -79,7 +55,7 @@ static NSTimer *_timer = nil;
     //系统通知：应用激活状态
     [self addNSNotification];
     
-    //系统通知：手机亮度改变时发送的通知（动画变化完时会到达这个通知。不用这个，否则会一直高亮）
+    //系统通知：手机亮度改变时发送的通知（动画变化完有时会到达这个通知。不用这个，否则会一直高亮）
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noti_saveDefaultBrightness) name:UIScreenBrightnessDidChangeNotification object:nil];
 }
 
@@ -99,7 +75,6 @@ static NSTimer *_timer = nil;
         if (_isFollowForegroundBrightness) {
             //NSLog(@"WillEnterForeground:上一次退到后台前记录的亮度值：%@",@(_currentBrightness));
             //NSLog(@"WillEnterForeground:当前屏幕取到的值：%@",@([UIScreen mainScreen].brightness));
-            
             //注意：这一步记录有时会有问题,会导致每次退会台后再打开亮度以退到后台时的亮度了！
             [self saveDefaultBrightness];
         }
@@ -110,8 +85,7 @@ static NSTimer *_timer = nil;
         if (_isFollowForegroundBrightness) {
             //NSLog(@"didBecomeActive:上一次退到后台前记录的亮度值：%@",@(_currentBrightness));
             //NSLog(@"didBecomeActive:当前屏幕取到的值：%@",@([UIScreen mainScreen].brightness));
-            
-            //这里记录的值不准确，值有些随机了
+            //这里记录的值不准确，值有些随机了!
             //[self saveDefaultBrightness];
         }
     }
@@ -123,10 +97,9 @@ static NSTimer *_timer = nil;
 //失去激活状态，快速恢复之前的亮度
 + (void)willResignActive {
     if (_isHigh) {
-        //页面进来太快呼出控制页板，而resignActive时,屏幕的亮度暗而用下面这句时，由于两值相近，而不变暗，只变高亮
+        //页面进来太快呼出控制页板，而resignActive时,屏幕的亮度暗而用下面这句时，由于(屏幕亮度值与普亮值)两值相近，而不变暗，只变高亮
         //[self _graduallySetBrightness:_currentBrightness];//退回到正常
-        
-        [self _graduallySetBrightness2:_currentBrightness];//退回到正常（里面取高亮值动画回来！）
+        [self _graduallySetBrightness:_currentBrightness];//退回到正常
     }
 
     //XX[ZZScreenBrightness graduallyResumeBrightness];//这里用这种动画只会执行之半就冻住了，回前台才继续执行完后再执行后面(暗->亮)动画
@@ -177,32 +150,6 @@ static NSTimer *_timer = nil;
     }
 }
 
-+ (void)_graduallySetBrightness2:(CGFloat)value {
-    [self _graduallySetBrightness:value]; return;
-    
-    if (!_queue) {
-        _queue = [[NSOperationQueue alloc] init];
-        _queue.maxConcurrentOperationCount = 1;
-    }
-//    [_queue cancelAllOperations];
-    
-    NSLog(@"将要变为的亮度%f",value);
-    
-    //>注意用了'高亮值'>>>
-    CGFloat brightness = _brightness;//[UIScreen mainScreen].brightness;
-    CGFloat stepInterval = _stepInterval;
-    CGFloat step = stepInterval * ((value > brightness) ? 1 : -1);
-    int times = fabs((value - brightness) / stepInterval);
-    CGFloat timeInterval = _timeInterval;
-    //根据亮度差计算出时间和每个单位时间调节的亮度值
-    for (CGFloat i = 1; i < times + 1; i++) {
-        [_queue addOperationWithBlock:^{
-            [NSThread sleepForTimeInterval:timeInterval];
-            [UIScreen mainScreen].brightness = brightness + i * step;
-        }];
-    }
-}
-
 + (void)graduallySetBrightness:(CGFloat)value {
     //先记录一下'普亮值'
     [self saveDefaultBrightness];
@@ -213,7 +160,10 @@ static NSTimer *_timer = nil;
     //设置高亮状态
     _isHigh = YES;
     
-    [self _graduallySetBrightness:value];
+    //可能点了跳转高亮页面时又快速呼出控制面板，即先执行willResignActive了再到这里则为InActive状态，此时不应有动画高亮的！
+    if ([UIApplication sharedApplication].applicationState==UIApplicationStateActive) {
+        [self _graduallySetBrightness:value];
+    }
 }
 
 + (void)graduallyResumeBrightness {
@@ -233,8 +183,25 @@ static NSTimer *_timer = nil;
 }
 
 
+
+
+
+
+
 #pragma mark - timer测试
-+ (void)graduallySetBrightness0_timer_old:(CGFloat)value {
+//尝试一下==================================
+//timer
+static CGFloat _value;
+static CGFloat _isIncrease;//+1增；-1减
+
+//timer_old
+static CGFloat t_brightness;
+static CGFloat _step;
+static int _times;
+static int _time;
+static NSTimer *_timer = nil;
+//尝试一下==================================
++ (void)_graduallySetBrightness0_timer_old:(CGFloat)value {
     if (_timer) {
         [_timer invalidate];
         _timer = nil;
@@ -269,7 +236,7 @@ static NSTimer *_timer = nil;
     NSLog(@"_times==%@; _time==%@",@(_times),@(_time));
 }
 
-+ (void)graduallySetBrightness0_timer:(CGFloat)value {
++ (void)_graduallySetBrightness0_timer:(CGFloat)value {
     if (_timer) {
         [_timer invalidate];
         _timer = nil;

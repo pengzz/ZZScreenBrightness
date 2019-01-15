@@ -52,10 +52,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)graduallyResumeBrightness;
 
-///**
-// 增加的方法，使亮度快速恢复到之前的值
-// */
-//+ (void)fastResumeBrightness;
 
 
 #pragma mark 细节调整

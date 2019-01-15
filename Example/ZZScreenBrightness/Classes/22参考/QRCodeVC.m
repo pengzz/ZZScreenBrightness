@@ -23,7 +23,7 @@
     
     [self addImageView];
     
-    [self addNSNotification];
+//    [self addNSNotification];
     
     //保存亮度
 //    [ZZScreenBrightness saveDefaultBrightness];
@@ -55,6 +55,7 @@
 }
 
 #pragma mark --添加通知
+/*
 -(void)addNSNotification{
     return;
     
@@ -76,7 +77,7 @@
 -(void)willResignActive{
     [ZZScreenBrightness fastResumeBrightness];
 }
-
+*/
 
 #pragma mark 移除本地所有通知
 -(void)removeNotification{
